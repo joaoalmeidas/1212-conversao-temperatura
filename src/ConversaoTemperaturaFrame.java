@@ -38,10 +38,7 @@ public class ConversaoTemperaturaFrame extends JFrame {
 					@Override
 					public void keyReleased(KeyEvent event) {
 						
-						final double temp = 5.0/9.0 * (Double.parseDouble(fahrenheit.getText()) - 32);
-						
-						System.out.println(Integer.parseInt(fahrenheit.getText()));
-						
+						final double temp = 5.0/9.0 * (Double.parseDouble(fahrenheit.getText()) - 32);	
 						
 						celsius.setText(String.format("Celsius: %.1f", temp));
 						
